@@ -12,7 +12,7 @@ class Team(models.Model):
 
 
 class Match(models.Model):
-    your_team = models.CharField( # Подвязать с команды
+    your_team = models.CharField( # Подвязать с моделью Team
         'Твоя команда'
     )
     enemy_team = models.CharField(
